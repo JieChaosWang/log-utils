@@ -20,7 +20,7 @@ import org.apache.commons.io.IOUtils;
 public class FileSplitUtils {
 
     /**
-     * 默认切割大小
+     * 默认切割后，每个文件大小 100M
      */
     public static final int DEFAULT_SIZE = 1024 * 1024 * 100;
 

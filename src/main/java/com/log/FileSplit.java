@@ -17,8 +17,10 @@ public class FileSplit {
 
     public static void main(String[] args) {
         try {
-            // 切割文件
+            // 需要切割大文件
             File srcFile = FileUtils.getFile("C:\\Users\\Administrator\\Desktop\\logs.log");
+
+            // 切割完成后，放在此路径下
             String chipsDir = "E:\\日志切割";
             FileSplitUtils.split(srcFile, chipsDir);
 
