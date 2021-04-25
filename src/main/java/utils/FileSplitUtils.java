@@ -60,7 +60,7 @@ public class FileSplitUtils {
 
             // IOUtils.read(inputStream, buffer) 读取完后，再读取则返回值为0
             for (int i = 1; (len = IOUtils.read(inputStream, buffer)) > 0; i++) {
-                temp = FileUtils.getFile(outputDir, "\\name" + name + "_" + String.valueOf(i)+".log");
+                temp = FileUtils.getFile(outputDir, "\\name" + name + "_" + i +".log");
                 FileUtils.writeByteArrayToFile(temp, buffer, 0, len);
             }
 
